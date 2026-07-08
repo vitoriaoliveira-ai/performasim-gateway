@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Performasim</title>
+<style>
+  :root{
+    --bg:#0F1222; --card:#FFFFFF; --ink:#1A1730; --muted:#6B6580;
+    --nr1:#2E7D6B; --avd:#5B4FE9; --line:#EDEBF7;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(160deg,#0F1222 0%, #1B1640 55%, #24184D 100%);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:24px;
+  }
+  .wrap{ width:100%; max-width:760px; }
+  .brand{ text-align:center; color:#fff; margin-bottom:32px; }
+  .brand h1{ font-size:28px; margin:0 0 6px; letter-spacing:.5px; }
+  .brand p{ margin:0; color:#C8C3E8; font-size:14px; }
+  .grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:620px){ .grid{ grid-template-columns:1fr; } }
+  a.card{
+    display:block; background:var(--card); border-radius:16px; padding:28px 24px;
+    text-decoration:none; color:var(--ink); border:1px solid var(--line);
+    box-shadow:0 12px 30px rgba(10,8,40,.25); transition:transform .15s ease, box-shadow .15s ease;
+  }
+  a.card:hover{ transform:translateY(-3px); box-shadow:0 16px 36px rgba(10,8,40,.35); }
+  .tag{
+    display:inline-block; font-size:11px; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; padding:4px 10px; border-radius:999px; margin-bottom:14px;
+  }
+  .tag.nr1{ background:#E4F3EE; color:var(--nr1); }
+  .tag.avd{ background:#EDEBFC; color:var(--avd); }
+  a.card h2{ margin:0 0 8px; font-size:20px; }
+  a.card p{ margin:0; color:var(--muted); font-size:14px; line-height:1.5; }
+  .go{ margin-top:16px; font-size:13px; font-weight:600; }
+  .go.nr1{ color:var(--nr1); }
+  .go.avd{ color:var(--avd); }
+  footer{ text-align:center; margin-top:28px; color:#8B84B5; font-size:12px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <h1>Performasim</h1>
+      <p>Escolha o sistema que você quer acessar</p>
+    </div>
+    <div class="grid">
+      <a class="card" href="/nr1">
+        <span class="tag nr1">NR-1</span>
+        <h2>Gestão de Riscos Psicossociais</h2>
+        <p>Ciclos de avaliação, respostas dos colaboradores e painel de acompanhamento conforme a NR-1.</p>
+        <div class="go nr1">Acessar o NR-1 →</div>
+      </a>
+      <a class="card" href="/desempenho">
+        <span class="tag avd">Desempenho</span>
+        <h2>Avaliação de Desempenho</h2>
+        <p>Ciclos de avaliação de performance, metas, PDIs e acompanhamento da liderança e do RH.</p>
+        <div class="go avd">Acessar Avaliação de Desempenho →</div>
+      </a>
+    </div>
+    <footer>performasim.com</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "rewrites": [
+    { "source": "/nr1", "destination": "https://connectabil-nr1-prod1.vercel.app/" },
+    { "source": "/nr1/:path*", "destination": "https://connectabil-nr1-prod1.vercel.app/:path*" },
+
+    { "source": "/painel", "destination": "https://connectabil-nr1-prod1.vercel.app/painel" },
+    { "source": "/painel/:path*", "destination": "https://connectabil-nr1-prod1.vercel.app/painel/:path*" },
+    { "source": "/login", "destination": "https://connectabil-nr1-prod1.vercel.app/login" },
+    { "source": "/responder/:path*", "destination": "https://connectabil-nr1-prod1.vercel.app/responder/:path*" },
+    { "source": "/api/:path*", "destination": "https://connectabil-nr1-prod1.vercel.app/api/:path*" },
+
+    { "source": "/desempenho", "destination": "https://avd-connectabil.vercel.app/" },
+    { "source": "/desempenho/", "destination": "https://avd-connectabil.vercel.app/" },
+    { "source": "/desempenho/api/:path*", "destination": "https://avd-connectabil.vercel.app/api/:path*" }
+  ]
+}
