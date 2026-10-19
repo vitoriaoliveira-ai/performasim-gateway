@@ -17,6 +17,7 @@
     { "source": "/desempenho/api/:path*", "destination": "https://avd-connectabil.vercel.app/api/:path*" },
 
     { "source": "/diagnosticodogestor", "destination": "https://diagnostico-do-gestor-six.vercel.app/diagnosticodogestor" },
+    { "source": "/diagnosticodogestor/", "destination": "https://diagnostico-do-gestor-six.vercel.app/diagnosticodogestor" },
     { "source": "/diagnosticodogestor/:path*", "destination": "https://diagnostico-do-gestor-six.vercel.app/diagnosticodogestor/:path*" }
   ]
 }
